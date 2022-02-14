@@ -1,5 +1,10 @@
+<script>
+	import ViewSelector from '$lib/components/ViewSelector.svelte';
+	import ViewSelectorMenu from '$lib/components/ViewSelectorMenu.svelte';
+</script>
+
 <!-- This example requires Tailwind CSS v2.0+ -->
-<div class="lg:flex lg:h-full lg:flex-col">
+<div class="w-full lg:flex lg:h-full lg:flex-col">
 	<header
 		class="relative z-20 flex items-center justify-between border-b border-gray-200 py-4 px-6 lg:flex-none"
 	>
@@ -57,29 +62,7 @@
 			</div>
 			<div class="hidden md:ml-4 md:flex md:items-center">
 				<div class="relative">
-					<button
-						type="button"
-						class="flex items-center rounded-md border border-gray-300 bg-white py-2 pl-3 pr-2 text-sm font-medium text-gray-700 shadow-sm hover:bg-gray-50"
-						id="menu-button"
-						aria-expanded="false"
-						aria-haspopup="true"
-					>
-						Month view
-						<!-- Heroicon name: solid/chevron-down -->
-						<svg
-							class="ml-2 h-5 w-5 text-gray-400"
-							xmlns="http://www.w3.org/2000/svg"
-							viewBox="0 0 20 20"
-							fill="currentColor"
-							aria-hidden="true"
-						>
-							<path
-								fill-rule="evenodd"
-								d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-								clip-rule="evenodd"
-							/>
-						</svg>
-					</button>
+					<ViewSelector />
 
 					<!--
             Dropdown menu, show/hide based on menu state.
@@ -91,45 +74,7 @@
               From: "transform opacity-100 scale-100"
               To: "transform opacity-0 scale-95"
           -->
-					<div
-						class="focus:outline-none absolute right-0 mt-3 w-36 origin-top-right overflow-hidden rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5"
-						role="menu"
-						aria-orientation="vertical"
-						aria-labelledby="menu-button"
-						tabindex="-1"
-					>
-						<div class="py-1" role="none">
-							<!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
-							<a
-								href="#"
-								class="text-gray-700 block px-4 py-2 text-sm"
-								role="menuitem"
-								tabindex="-1"
-								id="menu-item-0">Day view</a
-							>
-							<a
-								href="#"
-								class="text-gray-700 block px-4 py-2 text-sm"
-								role="menuitem"
-								tabindex="-1"
-								id="menu-item-1">Week view</a
-							>
-							<a
-								href="#"
-								class="text-gray-700 block px-4 py-2 text-sm"
-								role="menuitem"
-								tabindex="-1"
-								id="menu-item-2">Month view</a
-							>
-							<a
-								href="#"
-								class="text-gray-700 block px-4 py-2 text-sm"
-								role="menuitem"
-								tabindex="-1"
-								id="menu-item-3">Year view</a
-							>
-						</div>
-					</div>
+					<ViewSelectorMenu />
 				</div>
 				<div class="ml-6 h-6 w-px bg-gray-300" />
 				<button
@@ -231,6 +176,7 @@
 			</div>
 		</div>
 	</header>
+
 	<div class="shadow ring-1 ring-black ring-opacity-5 lg:flex lg:flex-auto lg:flex-col">
 		<div
 			class="grid grid-cols-7 gap-px border-b border-gray-300 bg-gray-200 text-center text-xs font-semibold leading-6 text-gray-700 lg:flex-none"
