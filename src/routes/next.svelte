@@ -7,7 +7,7 @@
 	<header
 		class="relative z-20 flex flex-none items-center justify-between border-b border-gray-200 py-4 px-6"
 	>
-		<div>
+		<div class="w-full">
 			<h1 class="text-lg font-semibold leading-6 text-gray-900">
 				<time datetime="2022-01-22" class="sm:hidden">Jan 22, 2022</time>
 				<time datetime="2022-01-22" class="hidden sm:inline">January 22, 2022</time>

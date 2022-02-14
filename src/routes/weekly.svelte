@@ -175,7 +175,7 @@
 			</div>
 		</div>
 	</header>
-	<div class="w-full">
+	<div class="w-full h-full">
 		<div class="flex flex-auto flex-col overflow-auto bg-white">
 			<div
 				style="width: 165%"

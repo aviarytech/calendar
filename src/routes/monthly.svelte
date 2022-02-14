@@ -4,7 +4,7 @@
 </script>
 
 <!-- This example requires Tailwind CSS v2.0+ -->
-<div class="w-full lg:flex lg:h-full lg:flex-col">
+<div class="w-full flex h-full flex-col">
 	<header
 		class="relative z-20 flex items-center justify-between border-b border-gray-200 py-4 px-6 lg:flex-none"
 	>
