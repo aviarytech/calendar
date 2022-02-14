@@ -1,0 +1,42 @@
+/* Write your global styles here, in PostCSS syntax */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Comfortaa&family=Hind+Siliguri+Source+Sans+3&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.roboto {
+	font-family: 'Roboto Mono', monospace;
+}
+
+.hind {
+	font-family: 'Hind Siliguri', sans-serif;
+}
+
+.comfortaa {
+	font-family: 'Comfortaa', cursive;
+}
+
+.source {
+	font-family: 'Source Sans 3', sans-serif;
+}
+
+body,
+#svelte {
+	font-family: 'Source Sans 3', sans-serif;
+	background: rgba(0, 0, 0, 0);
+}
+/* Works on Firefox */
+* {
+	scrollbar-color: dark dark;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+	width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+	background: dark;
+}

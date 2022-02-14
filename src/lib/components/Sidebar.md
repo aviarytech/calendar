@@ -1,0 +1,7 @@
+- [Day](/day)
+- [Week](/week)
+- [Month](/month)
+- [Year](/year)
+- [Agenda](/agenda)
+- [Agenda 2](/agenda-2)
+- [Agenda Stacked](/agenda-stacked)
